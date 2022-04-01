@@ -19,6 +19,8 @@ Cintia Leal Rodrigues
 
 ## Instruções de execução
 
+O projeto foi criado no VScode e compilado no wsl. 
+
 Para compilar, basta rodar:
 > make
 
