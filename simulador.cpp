@@ -16,8 +16,8 @@ void aplicacaoTransmissora(void) {
   string mensagem;      
   cout << "Digite a mensagem: ";
   getline(cin, mensagem);       /* recebe a mensagem a ser codificada*/
-  cout << "Selecione o tipo de codificação:" << endl;
-  cout << "\t1 -> Binária" << endl;
+  cout << "Selecione o tipo de protocolo:" << endl;
+  cout << "\t1 -> Binário" << endl;
   cout << "\t2 -> Manchester" << endl;
   cout << "\t3 -> Bipolar" << endl;
   cin >> codificacao;       /* recebe o tipo de codificação */
