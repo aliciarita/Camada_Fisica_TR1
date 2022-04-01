@@ -82,8 +82,6 @@ vector<int> camadaFisicaTransmissora_Codificacao_Manchester(vector<int> quadro) 
   for (i = 0; i < tam; i++) { /* quadro XOR clock */
     bits.push_back(quadro.at(i) ^ clock.at(0));   /* adiciona (quadro XOR clock(0)) */
     bits.push_back(quadro.at(i) ^ clock.at(1));   /* adiciona (quadro XOR clock(1)) */
-    if(i % 8 == 0)
-      cout << endl;
 
     /* printa (quadro XOR clock) */
     cout << (quadro.at(i) ^ clock.at(0)); /*at -> elemento de acesso*/
