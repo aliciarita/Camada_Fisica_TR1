@@ -1,26 +1,40 @@
-/**
- * @file simulador.cpp
- * @author Alícia Rita Oliveira dos Reis (170129306@aluno.unb)
- * @author Cintia Leal Rodrigues (170125696@aluno.unb) 
- * O simulador é responsável por simular as camadas de redes.
-*/
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
 #include "camadaFisica.hpp"
 
-void main(){    
-    aplicacaoTransmissora();
+int main(void) {
+  aplicacaoTransmissora();    /* chama a aplicação da transmissão */
+  return 0;
 }
 
-void aplicacaoTransmissora(){
-    string mensagem;
-    cont << "Digite uma mensagem:" <<endl;
-    cin >> mensagem;
+/*** Camada de aplicação ***/
 
-    camadaDeAplicacaoTransmissora(mensagem); /* chama a camada aplicacao transmissora */
-    int tipoDeDecodificacao;       /* numero do tipo de codificacao */
-    cout << "\nSelecione o tipo de protocolos:" <<endl
-         << "\t1 -> Codificação Binária" <<endl
-         << "\t2 -> Codificação Manchester" <<endl
-         << "\t3 -> Codificação Bipolar" <<endl
-    cin >> tipoDeDecodificacao;
-    camadaFisicaTransmissora(tipoDeDecodificacao);
+void aplicacaoTransmissora(void) {
+  int codificacao = 0;      /* tipo de codificação */
+  string mensagem;      
+  cout << "Digite a mensagem: ";
+  getline(cin, mensagem);       /* recebe a mensagem a ser codificada*/
+  cout << "Selecione o tipo de codificação:" << endl;
+  cout << "\t1 -> Binária" << endl;
+  cout << "\t2 -> Manchester" << endl;
+  cout << "\t3 -> Bipolar" << endl;
+  cin >> codificacao;       /* recebe o tipo de codificação */
+  camadaDeAplicacaoTransmissora(mensagem, codificacao);
+}
+
+/* Recebe a mensagem e a codifica a mensagem para transmitir o sinal  */ 
+void camadaDeAplicacaoTransmissora(string mensagem, int codificacao){
+  camadaFisicaTransmissora(codificaMensagem(mensagem), codificacao);
+}
+
+/* Recebe o sinal codificado e o decodifica */
+void camadaDeAplicacaoReceptora(vector<int> quadro) {  
+  aplicacaoReceptora(decodificaMensagem(quadro));
+}
+
+/* Recebe a mensagem a ser exibida */
+void aplicacaoReceptora(string mensagem) {
+  cout << "\nMensagem recebida: " << mensagem << endl;
 }

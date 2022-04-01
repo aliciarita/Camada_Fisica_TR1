@@ -1,10 +1,25 @@
-all: 
-		g++ -std=c++17 simulador.cpp -Wall -pedantic -c
+#COMPILER
+CPP=g++
 
-run: 	
-		./simulador.exe
+# Nome do projeto
+SIM=simulador
 
-debug: 
+#FLAGS G++
+FLAGS= -c -Wall -pedantic
 
-clear: 
-		rm *.o all
+all: $(SIM)
+
+$(SIM): simulador.o camadaFisica.o
+	$(CPP) -o $@ $^
+
+simulador.o: simulador.cpp camadaFisica.hpp
+	$(CPP) -o $@ $< $(FLAGS)
+
+camadaFisica.o: camadaFisica.cpp camadaFisica.hpp
+	$(CPP) -o $@ $< $(FLAGS)
+
+run: 
+	./$(SIM)
+
+clean:
+	rm -rf *.o $(SIM)	
