@@ -1,0 +1,319 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Apr  2 14:16:31 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-3.0.0
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+rvm_path = /home/cintialr/.rvm
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /mnt/c/Users/cinti/OneDrive/Documentos/GitHub/Camada_Fisica_TR1
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"a513330bf1c350c1f1bb229e1d494e4b.pt-br","_translationsConfigFile":"/home/cintialr/.vscode-server/data/clp/a513330bf1c350c1f1bb229e1d494e4b.pt-br/tcf.json","_cacheRoot":"/home/cintialr/.vscode-server/data/clp/a513330bf1c350c1f1bb229e1d494e4b.pt-br","_resolvedLanguagePackCoreLocation":"/home/cintialr/.vscode-server/data/clp/a513330bf1c350c1f1bb229e1d494e4b.pt-br/e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"/home/cintialr/.vscode-server/data/clp/a513330bf1c350c1f1bb229e1d494e4b.pt-br/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /mnt/c/Users/cinti/AppData/Local/Programs/Microsoft VS Code/bin/code
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# makefile (from 'makefile', line 2)
+CPP = g++
+# environment
+VSCODE_CWD = /mnt/c/Users/cinti/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/cintialr/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/bin/remote-cli:/home/cintialr/.rvm/gems/ruby-3.0.0/bin:/home/cintialr/.rvm/gems/ruby-3.0.0@global/bin:/home/cintialr/.rvm/rubies/ruby-3.0.0/bin:/home/cintialr/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/xampp/php:/mnt/c/Users/cinti/.poetry/bin:/mnt/c/Users/cinti/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/cinti/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/cinti/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cinti/AppData/Roaming/npm:/mnt/c/Users/cinti/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/cinti/AppData/Local/atom/bin:/mnt/c/Users/cinti/AppData/Local/GitHubDesktop/bin:/mnt/c/Program Files/Azure Data Studio/bin:/snap/bin:/home/cintialr/.rvm/bin:/home/cintialr/.rvm/bin
+# environment
+rvm_stored_umask = 0022
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-5e41ecc8-42b0-40b6-bc83-02dcdec030e6.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+rvm_bin_path = /home/cintialr/.rvm/bin
+# environment
+PWD = /mnt/c/Users/cinti/OneDrive/Documentos/GitHub/Camada_Fisica_TR1
+# default
+.LOADED := 
+# environment
+GEM_HOME = /home/cintialr/.rvm/gems/ruby-3.0.0
+# environment
+WSL_INTEROP = /run/WSL/8_interop
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/cintialr
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = cintialr
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+GEM_PATH = /home/cintialr/.rvm/gems/ruby-3.0.0:/home/cintialr/.rvm/gems/ruby-3.0.0@global
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /home/cintialr/.rvm/rubies/ruby-3.0.0/.irbrc
+# environment
+SHLVL = 1
+# makefile (from 'makefile', line 5)
+SIM = simulador
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = cintialr
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = Code
+# environment
+rvm_version = 1.29.12 (latest)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/cinti/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.0
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+rvm_user_install_flag = 1
+# automatic
++F = $(notdir $+)
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /home/cintialr
+# default
+SUFFIXES := 
+# makefile (from 'makefile', line 8)
+FLAGS = -c -Wall -pedantic
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+rvm_loaded_flag = 1
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MY_RUBY_HOME = /home/cintialr/.rvm/rubies/ruby-3.0.0
+# environment
+MOTD_SHOWN = update-motd
+# variable set hash-table stats:
+# Load=82/1024=8%, Rehash=0, Collisions=5/114=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 45, inode 10977524091955974): 9 files, no impossibilities.
+
+# 9 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: simulador
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+simulador.o: simulador.cpp camadaFisica.hpp
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := simulador.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := simulador.cpp camadaFisica.hpp
+# automatic
+# | := 
+# automatic
+# < := simulador.cpp
+# automatic
+# ^ := simulador.cpp camadaFisica.hpp
+# automatic
+# ? := simulador.cpp camadaFisica.hpp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'makefile', line 16):
+	$(CPP) -o $@ $< $(FLAGS)
+
+simulador: simulador.o camadaFisica.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'makefile', line 13):
+	$(CPP) -o $@ $^
+
+# Not a target:
+camadaFisica.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+camadaFisica.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-31 22:14:54.2805022
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-31 22:08:44.0154709
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+camadaFisica.o: camadaFisica.cpp camadaFisica.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'makefile', line 19):
+	$(CPP) -o $@ $< $(FLAGS)
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 22):
+	./$(SIM)
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 25):
+	rm -rf *.o $(SIM)	
+
+# Not a target:
+simulador.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-01 18:18:36.0362479
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/34=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 19 / storage = 187 B / avg = 9 B
+# current buf: size = 8162 B / used = 187 B / count = 19 / avg = 9 B
+
+# strcache performance: lookups = 38 / hit rate = 50%
+# hash-table stats:
+# Load=19/8192=0%, Rehash=0, Collisions=1/38=3%
+# Finished Make data base on Sat Apr  2 14:16:32 2022
+
+ 
